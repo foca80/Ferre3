@@ -21,13 +21,15 @@ import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //end Datepicker
 import { CreateProductPageComponent } from './create-product-page/create-product-page.component';
+import { ProductListMaterialComponent } from './product-list-material/product-list-material.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateProductComponent,
     ProductListComponent,
-    CreateProductPageComponent
+    CreateProductPageComponent,
+    ProductListMaterialComponent
   ],
   imports: [
     BrowserModule,
