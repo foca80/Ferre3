@@ -4,6 +4,7 @@ import { CreateProductComponent } from './create-product/create-product.componen
 import { ProductListComponent } from './product-list/product-list.component';
 import { CreateProductPageComponent } from './create-product-page/create-product-page.component';
 import { ProductListMaterialComponent } from './product-list-material/product-list-material.component';
+import { ProductSearchrComponent } from './product-searchr/product-searchr.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
                         {path: "list", component: ProductListComponent},
                         {path: "boxlist", component: CreateProductPageComponent},
                         {path: "listMaterial", component: ProductListMaterialComponent},
+                        {path: "searchProduct", component: ProductSearchrComponent},
                         {path: '', redirectTo: 'customer', pathMatch:'full'}
                         ];
 

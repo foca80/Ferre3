@@ -22,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //end Datepicker
 import { CreateProductPageComponent } from './create-product-page/create-product-page.component';
 import { ProductListMaterialComponent } from './product-list-material/product-list-material.component';
+import { ProductSearchrComponent } from './product-searchr/product-searchr.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ProductListMaterialComponent } from './product-list-material/product-li
     CreateProductComponent,
     ProductListComponent,
     CreateProductPageComponent,
-    ProductListMaterialComponent
+    ProductListMaterialComponent,
+    ProductSearchrComponent
   ],
   imports: [
     BrowserModule,

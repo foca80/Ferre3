@@ -18,7 +18,7 @@ export class CreateProductPageComponent implements OnInit {
   types : Type[];
   mensaje : String;
 
-  constructor(private productService: ProductService, private router: Router) { }
+  constructor(public productService: ProductService, private router: Router) { }
 
   ngOnInit(): void {
     //cargando types
@@ -47,7 +47,7 @@ export class CreateProductPageComponent implements OnInit {
   }
   
   changeType(evt) {
-      alert("Ho" + this.product.type.idType + ": " + evt);
+      alert("Hola: " + this.product.type.idType);
       this.mensaje = this.product.type.description;
 
   }
