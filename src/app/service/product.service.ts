@@ -1,16 +1,17 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http'; //importar a mano / ojo
-import { Observable, of, throwError } from 'rxjs';
+import { Observable, of, throwError, from } from 'rxjs';
 import { Product } from '../model/product';
 import { Type } from '../model/type';
 import { map, catchError } from 'rxjs/operators';
+import { URL_SERVICES } from '../config/config';
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class ProductService {
-  private urlBase = 'http://localhost:8080/api';
+  private urlBase = URL_SERVICES+ '/api';
   private httpHeaders = new HttpHeaders({'Content-type' : 'application/json'}); //definir a mano
   //inyectar http, también importarlo en app.module.ts
   constructor(private http: HttpClient) { }
